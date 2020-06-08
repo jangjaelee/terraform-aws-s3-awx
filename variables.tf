@@ -6,7 +6,7 @@ variable "region" {
 }
 
 variable "s3-bucket" {
-  description = "AWS S3 Bucket"
+  description = "AWS S3 Bucket - default awx"
   type        = string
   #default     = "s3-bucket-awx"
   default     = ""
