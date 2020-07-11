@@ -30,3 +30,15 @@ variable "vpc-tagname" {
   type        = string
   #default     = "VPC-awx"
 }
+
+variable "keypair_name" {
+  description = "EC2 instance keypair name"
+  type        = string
+  #default     = "Keypair-awx"
+}
+
+variable "keypair_file" {
+  description = "EC2 instance keypair file"
+  type        = string
+  #default     = "./key/ec2-public-key.pem"
+}
