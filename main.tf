@@ -20,3 +20,12 @@ module "route53" {
   public_domain_name  = var.public_domain_name
   private_domain_name = var.private_domain_name
 }
+  
+module "keypair" {
+  #source = "github.com/jangjaelee/module-terraform-aws-key-pair.git"
+  source  = "app.terraform.io/cine0831/keypair/aws"
+  version = "0.1.0"
+
+  keypair_name = var.keypair_name
+  keypair_file = var.keypair_file
+}
