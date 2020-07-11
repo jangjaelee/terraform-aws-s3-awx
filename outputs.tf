@@ -16,3 +16,11 @@ output "route53-public" {
 output "route53-private" {
   value = module.route53.route53-private
 }
+  
+output "info-keypair-name" {
+  value = module.keypair.info-keypair-name
+}
+
+output "info-keypair-id" {
+  value = module.keypair.info-keypair-id
+}
